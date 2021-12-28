@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="pt-br">  
+   <head> 
+      <meta charset = "utf-8">
+      <link rel="icon" type="image/x-icon" href="favicon.ico"> 
+      <title>Jogo da Velha</title>
+      <style>
+          body {
+              background-image: url("logos.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+          }
+
+          #jogadorSelecionado {
+              margin: auto;
+              margin-top: 40px;
+              margin-bottom: 30px;
+              width: 252px;
+          }
+
+          #btnRecomecar {
+            padding: 10px;
+            margin-right:10px;
+            font-size:20px;
+            color: white;
+            cursor: ponter;
+            border-radius: 10px;
+           }
+
+          .quadrado {
+              width: 80px;
+              height: 60px;
+              border: 1px dashed white;
+              float: left;
+              text-align: center;
+              padding-top: 20px;
+          }
+
+          .tabuleiro {
+              width: 252px;
+              height: 252px;
+              margin:auto;
+          }
+
+          .vezJogador {
+            float:left;
+            margin-right:10px;
+            font-size:20px;
+            color: white;
+          }
+
+          .linha {
+              display: flex;
+          }
+      </style> 
+   </head> 
+   <body> 
+
+    <div id="jogadorSelecionado">
+        <p class="vezJogador">Jogador da Vez:</p>
+        <img src="" border="0" height="60px" alt="">
+    </div>
+
+    <div class="tabuleiro">
+        <div class="linha">
+            <div id="a1" class="quadrado" jogada=""></div>
+            <div id="a2" class="quadrado" jogada=""></div>
+            <div id="a3" class="quadrado" jogada=""></div>
+        </div>
+
+        <div class="linha">
+            <div id="b1" class="quadrado" jogada=""></div>
+            <div id="b2" class="quadrado" jogada=""></div>
+            <div id="b3" class="quadrado" jogada=""></div>
+        </div>
+
+        <div class="linha">
+            <div id="c1" class="quadrado" jogada=""></div>
+            <div id="c2" class="quadrado" jogada=""></div>
+            <div id="c3" class="quadrado" jogada=""></div>
+        </div>
+    </div>
+
+    <div id="">
+        <button id="btnRecomecar" disabled>Recomeçar o Jogo</button>
+    </div>
+
+    <script type="text/javascript" src="jogo-velha.js"></script>
+   </body> 
+</html> 
